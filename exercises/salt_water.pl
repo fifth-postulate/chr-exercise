@@ -8,12 +8,18 @@
  *
 */
 
-:- chr_constraint salt/0, water/0, salt_water/0, stir/0, time/0.
+:- chr_constraint 
+    salt/0, 
+    water/0, 
+    salt_water/0,
+    stir/0, 
+    time/0,
+    noise.
 
 stir\salt,water <=> salt_water.
 salt_water,time <=> salt,time.
 water,time <=> true.
-stir <=> true.
+stir <=> noise.
 time <=> true.
 
 :- chr_constraint salt/1, water/1, salt_water/1.

@@ -10,9 +10,7 @@
 
 :- chr_constraint salt/0, water/0, salt_water/0, stir/0, time/0.
 
-salt,salt <=> salt.
-water,water <=> water.
-salt,water,stir <=> salt_water,stir.
+stir\salt,water <=> salt_water.
 salt_water,time <=> salt,time.
 water,time <=> true.
 stir <=> true.

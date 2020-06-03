@@ -13,8 +13,6 @@
 
 interval(High, Low) <=> Low < High | interval(Low, High).
 interval(Lowest, Highest) \ interval(Low, High) <=> Lowest =< Low, High =< Highest | true.
-interval(A_low, A_high), interval(B_low, B_high) <=> A_low =< B_low, B_high =< A_high | interval(A_low, A_high).
 interval(A_low, A_high), interval(B_low, B_high) <=> A_low =< B_low, A_high =< B_high | interval(A_low, B_high).
 interval(A_low, A_high), interval(B_low, B_high) <=> B_low =< A_low, B_high =< A_high | interval(B_low, A_high).
-interval(A_low, A_high), interval(B_low, B_high) <=> B_low =< A_low, A_high =< B_high | interval(B_low, B_high).
 

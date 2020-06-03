@@ -8,9 +8,13 @@
  *
 */
 
-:- chr_constraint salt/0, water/0, salt_water/0.
+:- chr_constraint salt/0, water/0, salt_water/0, stir/0, time/0.
 
-salt,water <=> salt_water.
+salt,water,stir <=> salt_water,stir.
+salt_water,time <=> salt,time.
+water,time <=> true.
+stir <=> true.
+time <=> true.
 
 :- chr_constraint salt/1, water/1, salt_water/1.
 

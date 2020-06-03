@@ -1,4 +1,4 @@
-use_module(library(chr)).
+:- use_module(library(chr)).
 
 /*
  *  CHR syntax, since Anne can never remember it, and probably I can't either:

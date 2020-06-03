@@ -11,3 +11,7 @@
 :- chr_constraint salt/0, water/0, salt_water/0.
 
 salt,water <=> salt_water.
+
+:- chr_constraint salt/1, water/1, salt_water/1.
+
+salt(N),water(N) <=> salt_water(N).
